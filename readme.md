@@ -13,8 +13,8 @@ For help getting started with Flutter, view our online
 [documentation](https://laravel.com/docs/5.8).
 	
 	
- ## Resumo	
+e## Resume
  
  <b>php artisan serve</b>
-	Levanta um servidor local http://localhost:8000
+Levanta um servidor local http://localhost:8000
 	
