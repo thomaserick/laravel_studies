@@ -9,8 +9,8 @@
 <br>
 
 # Getting Started Laravel
-
-	For help getting started with Flutter, view our online [documentation](https://laravel.com/docs/5.8).
+For help getting started with Flutter, view our online
+[documentation](https://laravel.com/docs/5.8).
 	
 	
  ## Resumo	
