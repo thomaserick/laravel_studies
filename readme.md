@@ -70,3 +70,28 @@ public function boot()
 {
 Schema::defaultStringLength(191);
 }
+
+<b>Criar Factory Contato</b>
+
+- Pupular a base de dados para testes
+- php artisan make:factory ContatoFactory
+
+<b>Executar um factory (sedeer)</b>
+
+- php artisan make:seeder UsersTableSeeder
+- php artisan make:seeder ContatosTableSeeder
+
+<b> Atualizar o Composer</b>
+
+- composer dump-autoload
+
+<b>Alterar o DatabaseSeeder</b>
+
+- \$this->call([
+  ContatosTableSeeder::class,
+  UsersTableSeeder::class,
+  ]);
+
+<b>Executar o migrate e Seeder</b>
+
+- php artisan migrate:refresh --seed
