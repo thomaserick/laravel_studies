@@ -9,12 +9,25 @@
 <br>
 
 # Getting Started Laravel
+
 For help getting started with Flutter, view our online
 [documentation](https://laravel.com/docs/5.8).
-	
-	
+
 ## Resume
- 
- <b>php artisan serve</b>
-Levanta um servidor local http://localhost:8000
-	
+
+<b>Criando o projeto</b>
+
+- composer create-project laravel/laravel agenda_laravel --prefer-dist
+
+<b>Levantar um Servidor local http://localhost:8000 </b>
+
+- php artisan serve
+
+<b>Criar autenticacão automaticamente</b>
+
+- php artisan make:auth
+
+<b>Alterar Rota para login</b>
+
+- app/Http/Controllers/Auth
+- router/ -> Route::get('/', 'HomeController@index')->name('home');
