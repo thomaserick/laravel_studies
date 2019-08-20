@@ -31,3 +31,25 @@ For help getting started with Flutter, view our online
 
 - app/Http/Controllers/Auth
 - router/ -> Route::get('/', 'HomeController@index')->name('home');
+
+<b>Configurando database</b>
+
+- config/database
+- CREATE DATA BASE agenda;
+
+<b>Criar Migration </b>
+
+- php artisan make:migration create_contatos_table
+- O código acima utiliza o comando artisan do Laravel para criar uma migration, ela nada mais é que uma classe que irá tornar possível a manipulação da tabela de alunos que será criada na base de dados, além do comando php artisan make:migration criar_tabela_alunos , ele faz uma chamada para –create=aluno que define o nome da tabela a ser criada na base de dados a partir dessa migration.
+
+<b>Criando Model</b>
+
+- php artisan make:model Contato
+
+<b>Campos que podem ser preenchidos Model Contato</b>
+
+- protected \$fillable = ['saudacao', 'nome', 'telefone', 'email', 'data_nascimento', 'avatar', 'nota'];
+
+<b>Criando as Tabelas no database</b>
+
+- php artisan migrate
