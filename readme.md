@@ -53,3 +53,20 @@ For help getting started with Flutter, view our online
 <b>Criando as Tabelas no database</b>
 
 - php artisan migrate
+
+<b>Erro de migrate Solucão</b>
+
+- SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `ag_users` add unique `users_email_unique`(`email`))
+
+- Para resolver isso siga os passos abaixo:
+  Edite o arquivo app\Providers\AppServiceProvider.php
+  Adicione o namespace use Illuminate\Support\Facades\Schema;
+  Dentro do método boot adicione Schema::defaultStringLength(191);
+  Resultado final do arquivo:
+
+use Illuminate\Support\Facades\Schema;
+
+public function boot()
+{
+Schema::defaultStringLength(191);
+}
