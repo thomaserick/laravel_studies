@@ -95,3 +95,7 @@ Schema::defaultStringLength(191);
 <b>Executar o migrate e Seeder</b>
 
 - php artisan migrate:refresh --seed
+
+<b>Criando as Validações campos Tabela Contatos </b>
+
+- php artisan make:request ContatoRequest
