@@ -99,3 +99,7 @@ Schema::defaultStringLength(191);
 <b>Criando as Validações campos Tabela Contatos </b>
 
 - php artisan make:request ContatoRequest
+
+<b>Criar um link Virtual da public Storage</b>
+
+- php artisan storage:link
