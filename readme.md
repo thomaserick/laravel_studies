@@ -103,3 +103,11 @@ Schema::defaultStringLength(191);
 <b>Criar um link Virtual da public Storage</b>
 
 - php artisan storage:link
+
+<b>Criar um controller de Contato</b>
+
+- php artisan make:controller ContatoController
+
+<b>Criar um controller de Contato com os metodos padrões </b>
+
+- php artisan make :controller ContatoController --resource
