@@ -13,9 +13,8 @@ class ContatoRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
-
     /**
      * Get the validation rules that apply to the request.
      *
@@ -24,8 +23,7 @@ class ContatoRequest extends FormRequest
     public function rules()
     {
         switch ($this->method()) {
-
-            case "POST":   //new register
+            case "POST": // CRIAÇÃO DE UM NOVO REGISTRO
                 return [
                     'saudacao' => 'required|max:5',
                     'nome' => 'required|max:100',
@@ -34,10 +32,8 @@ class ContatoRequest extends FormRequest
                     'data_nascimento' => 'date_format:"d/m/Y"',
                     'avatar' => 'nullable|sometimes|image|mimes:jpg,jpeg,png,gif'
                 ];
-
                 break;
-            case "PUT":   //update register
-
+            case "PUT": // ATUALIZAÇÃO DE UM REGISTRO EXISTENTE
                 return [
                     'saudacao' => 'required|max:5',
                     'nome' => 'required|max:100',
@@ -47,12 +43,10 @@ class ContatoRequest extends FormRequest
                     'avatar' => 'nullable|sometimes|image|mimes:jpg,jpeg,png,gif'
                 ];
                 break;
-
             default:
                 break;
         }
     }
-
     public function messages()
     {
         return [

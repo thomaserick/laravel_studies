@@ -8,7 +8,6 @@
         border: 1px solid #c0c0c0;
         border-radius: 5px;
     }
-
     .a-line {
         line-height: 30px;
     }

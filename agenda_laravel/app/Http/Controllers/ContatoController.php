@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Contato;
+use App\Http\Requests\ContatoRequest;
 
 class ContatoController extends Controller
 {

@@ -110,4 +110,17 @@ Schema::defaultStringLength(191);
 
 <b>Criar um controller de Contato com os metodos padrões </b>
 
-- php artisan make :controller ContatoController --resource
+- php artisan make:controller ContatoController --resource
+
+<b> {{ csrf_field() }} </b>
+
+- Token de autenticação, evitanto injection (segurança)
+
+<b>{{ old('nome') }}</b>
+
+- Caso de algum erro no form carrega as informações
+
+<b>Clonar projeto GitHub</b>
+
+- composer install
+- php artisan key:generate

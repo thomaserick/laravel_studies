@@ -19,7 +19,7 @@ Auth::routes();
 ##Mudando a Rota para o Barra
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => 'auth', 'prefix' => 'contato'], function () {
+Route::group(['middleware' => 'auth', 'prefix' => 'contatos'], function () {
     Route::get('/', 'ContatoController@index');
     Route::get('/add', 'ContatoController@create');
     Route::post('/', 'ContatoController@store');

@@ -41,6 +41,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
+                        @guest
+                        @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('contatos') }}">Contatos <span class="sr-only">(current)</span></a>
+                        </li>
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
